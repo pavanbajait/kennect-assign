@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementById</title>
+</head>
+<body>
+    <h3></h3>
+<p>
+    The Document method getElementById() returns an Element object representing the element whose id property matches the specified string. Since element IDs are required to be unique if specified, they're a useful way to get access to a specific element quickly.
+</p>
+<p>The ID is case-sensitive string which is unique within the document</p>
+<p>An Element object describing the DOM element object matching the specified ID, or null if no matching element was found in the document.</p>
+<h2>EXAMPLE</h2>
+<br>
+<p id="para">Text will change the color after clicking below buttons </p>
+    <button onclick="changeColor('blue');">blue</button>
+    <button onclick="changeColor('red');">red</button>
+</body>
+</html>
+<script>
+
+    function changeColor(newColor) {
+        const elem = document.getElementById('para');
+        elem.style.color = newColor;
+    }
+</script>
